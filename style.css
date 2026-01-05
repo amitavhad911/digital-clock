@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'poppins' sans-serif;
+  box-sizing: border-box;
+}
+
+.aaa{
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+  70deg,
+  hsl(240deg 100% 20%) 0%,
+  hsl(313deg 100% 20%) 2%,
+  hsl(337deg 100% 28%) 7%,
+  hsl(8deg 66% 37%) 15%,
+  hsl(33deg 76% 35%) 24%,
+  hsl(55deg 52% 37%) 35%,
+  hsl(40deg 42% 46%) 47%,
+  hsl(29deg 37% 54%) 61%,
+  hsl(19deg 33% 59%) 75%,
+  hsl(10deg 23% 63%) 88%,
+  hsl(0deg 11% 65%) 100%
+);
+  
+}
+.container{
+  position: relative;
+  width: 800px;
+  height: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.clock{
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container::before{
+  content: '';
+  height: 180px;
+  width: 180px;
+  background-color: red;
+  position: absolute;
+  left: -50px;
+  top: -75px;
+  z-index: -1;
+}
+.container::after{
+  content: '';
+  height: 180px;
+  width: 180px;
+  background-color: olive;
+  border-radius: 500px;
+  position: absolute;
+  right: -50px;
+  bottom: -75px;
+  z-index: -1;
+}
+.clock span{
+  font-size: 80px;
+  width: 110px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.clock span::after{
+  font-size: 16px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#hrs::after{
+  content: 'Hour';
+}
+#min::after{
+  content: 'Minutes';
+}
+#sec::after{
+  content: 'Second';
+}
+h1{
+  font-size: 100px;
+  font-style: italic;
+  font-weight: bolder;
+  color: aqua;
+  padding-left: 400px;
+  padding-top: 50px;
+}
+.day{
+    width:  290px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(73,67,180,1) 100%, rgba(252,70,107,1) 100%);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.day span{
+  font-size: 25px;
+  font-weight: bold;
+  width: 70px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.day span::after{
+  font-size: 16px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#Day::after{
+  content: 'Day';
+}
+#month::after{
+  content: 'Date';
+}
