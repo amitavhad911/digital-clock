@@ -4,6 +4,7 @@ A simple and visually appealing **Digital Clock** built using **HTML, CSS, and J
 It displays real-time hours, minutes, seconds, AM/PM, day, date, and month with a modern UI.
 
 ---
+Live Demo -  https://amitavhad911.github.io/digital-clock/
 
 ## 🚀 Features
 - Real-time digital clock
@@ -24,4 +25,4 @@ It displays real-time hours, minutes, seconds, AM/PM, day, date, and month with 
 
 ---
 
-## 📂 Project Structure
+
